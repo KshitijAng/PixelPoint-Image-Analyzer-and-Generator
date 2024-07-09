@@ -1,29 +1,132 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    box-sizing: border-box;
 }
 
 .App {
-    margin: 120px auto;
+    margin: 180px auto;
     padding: 20px;
     width: 700px;
-    height: auto;
-    border: 2px solid white;
+    height: 470px;
+    border: 3px solid white;
     border-radius: 12px;
     display: flex; /* Enables flexbox layout */
     flex-direction: column; /* Arranges child elements in a column */
     align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    text-align: center; /* Aligns text content in the center */
+    text-align: center;
+    justify-content: center;
 }
 
 .App h1 {
-    font-size: 48px; /* Adjust size as needed */
+    font-size: 42px; /* Adjust size as needed */
     font-weight: bold; /* Adjust weight as needed */
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     -webkit-background-clip: text; /* Apply gradient to text */
     background-clip: text;
     color: transparent; /* Hide original text color */
     font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"] {
+    padding: 17px; /* Reduce padding for a more compact look */
+    border: 2px solid white;
+    border-radius: 12px;
+    color: white;
+    margin-top: 50px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
+    width: 370px; /* Ensure the input takes the full width of its container */
+    box-sizing: border-box; 
+    text-align: center;
+    outline: none;
+  }
+  
+  input[type="text"]::placeholder {
+    color: white;
+    font-size: 18px;
+  }
+
+.button-section{
+    margin-top: 40px;
+    display: flex;
+    gap: 67px;
+}
+
+.button-section button{
+    background: none;
+    padding: 13px 40px;
+    border: 2px white solid;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand{
+    color: white;
+    text-decoration: none;
+}
+
+
+.header{
+    margin: 10px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+
+
+
+img {
+    width:146px;
+    height:66px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0F1F2B;    ;
+}
+
+.footer a {
+        text-decoration: none;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-left: 40px;
+        font-weight:300;
+}
+
+.footer p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
