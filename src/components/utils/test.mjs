@@ -24,20 +24,5 @@ const generateImage = async (prompt, apiKey) => {
     throw error;
   }
 }; 
-// Test the generateImage function
-// const testGenerateImage = async () => {
-//     const apiKey = 'sk-proj-zGkl9DXRljKxIuRQOFDGT3BlbkFJqY28uAExlPW48dhldsHP'; // Replace with your actual OpenAI API key
-//     const prompt = 'A futuristic city skyline at sunset';
-    
-//     try {
-//       const imageUrl = await generateImage(prompt, apiKey);
-//       console.log('Generated Image URL:', imageUrl);
-//     } catch (error) {
-//       console.error('Error in testGenerateImage:', error);
-//     }
-//   };
-  
-  // Call the test function
-// testGenerateImage();
 
 export default generateImage
