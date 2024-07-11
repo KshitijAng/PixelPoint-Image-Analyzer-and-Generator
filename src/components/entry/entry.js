@@ -4,8 +4,8 @@ import axios from "axios";
 import generateImage from "../utils/test.mjs"; 
 
 async function analyzeImage(imageUrl) {
-  const key = "110adda1515b49e68db5fb35b8ce48d3";
-  const endpoint = "https://kshitij.cognitiveservices.azure.com";
+  const key = " "; //Key
+  const endpoint = " "; //Endpoint
   const url = `${endpoint}/vision/v3.2/analyze?api-version=2021-05-01-preview`;
 
   try {
@@ -47,7 +47,7 @@ const Entry = () => {
   };
 
 const handleGenerate = async () => {
-    const apiKey = 'sk-proj-zGkl9DXRljKxIuRQOFDGT3BlbkFJqY28uAExlPW48dhldsHP'; // Replace with your actual OpenAI API key
+    const apiKey = ' '; // Replace with your actual OpenAI API key
     try {
       const generatedUrl = await generateImage(imageUrl, apiKey);
       setGeneratedImageUrl(generatedUrl);
